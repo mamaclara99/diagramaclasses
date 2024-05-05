@@ -1,5 +1,43 @@
-⁠mermaid
 classDiagram
+ class JanelaInicial {
+    }
+
+    class Administracao {
+    }
+
+    class GerenciadorDados {
+    }
+
+    class ControleAluno {
+    }
+
+    class Aluno {
+        - nome: string
+        - matricula: int
+        - dataNascimento: datetime
+        - endereco: string
+        - telefone: string
+    }
+
+    class Disciplina {
+        - nome: string
+        - codigo: string
+        - cargaHoraria: int
+        - professorResponsavel: string
+    }
+
+    class Atividade {
+        - nome: string
+        - tipo: string
+        - dataEntrega: datetime
+    }
+
+    class Turma {
+        - codigo: string
+        - periodo: string
+        - horario: string
+        - alunosMatriculados: list
+    }
     
     JanelaInicial o-- Administracao
     JanelaAlunos o-- JanelaInicial
