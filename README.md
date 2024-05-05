@@ -1,4 +1,4 @@
-⁠```mermaid
+⁠mermaid
 classDiagram
     
     JanelaInicial o-- Administracao
@@ -35,8 +35,3 @@ classDiagram
     Aluno <-- Turma
     Disciplina <-- Aula
 
-class JanelaInicial {
-        - atributo(privado por causa do -): tipo=estado inicial(se existir)
-        + metodo(tipo de cada parametro) tipo de retorno [publico por causa do +]
-    }
-```
