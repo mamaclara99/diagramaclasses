@@ -2,15 +2,25 @@ Vc colocou no começo:
 ```mermaid
 classDiagram
  class JanelaInicial {
+        + abrirJanela(): void
+        + fecharJanela(): void
     }
 
     class Administracao {
+        + adicionarUsuario(): void
+        + removerUsuario(): void
     }
 
     class GerenciadorDados {
+        + adicionarDados(): void
+        + removerDados(): void
+        + buscarDados(): void
     }
 
     class ControleAluno {
+        + adicionarAluno(): void
+        + removerAluno(): void
+        + atualizarAluno(): void
     }
 
     class Aluno {
@@ -19,6 +29,8 @@ classDiagram
         - dataNascimento: datetime
         - endereco: string
         - telefone: string
+        + visualizarInformacoes(): void
+        + atualizarInformacoes(): void
     }
 
     class Disciplina {
@@ -26,12 +38,18 @@ classDiagram
         - codigo: string
         - cargaHoraria: int
         - professorResponsavel: string
+        + adicionarDisciplina(): void
+        + removerDisciplina(): void
+        + atualizarDisciplina(): void
     }
 
     class Atividade {
         - nome: string
         - tipo: string
         - dataEntrega: datetime
+        + adicionarAtividade(): void
+        + removerAtividade(): void
+        + atualizarAtividade(): void
     }
 
     class Turma {
@@ -39,6 +57,9 @@ classDiagram
         - periodo: string
         - horario: string
         - alunosMatriculados: list
+        + criarTurma(): void
+        + removerTurma(): void
+        + matricularAluno(): void
     }
     
     JanelaInicial o-- Administracao
