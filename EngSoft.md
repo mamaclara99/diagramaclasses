@@ -61,7 +61,10 @@ classDiagram
         + removerTurma(): void
         + matricularAluno(): void
     }
-    
+    class GeradorRelatorio {
+        +criarRelatorio
+        +editarRelatorio
+    }
     JanelaInicial o-- Administracao
     JanelaAlunos o-- JanelaInicial
     JanelaDisciplinas o-- JanelaInicial
