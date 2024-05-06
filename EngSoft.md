@@ -62,9 +62,10 @@ classDiagram
         + matricularAluno(): void
     }
     class GeradorRelatorio {
-        +criarRelatorio
-        +editarRelatorio
+        +criarRelatorio (): string
+        +editarRelatorio (): string
     }
+
     JanelaInicial o-- Administracao
     JanelaAlunos o-- JanelaInicial
     JanelaDisciplinas o-- JanelaInicial
