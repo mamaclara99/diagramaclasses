@@ -1,3 +1,5 @@
+Vc colocou no começo:
+```mermaid
 classDiagram
  class JanelaInicial {
     }
@@ -72,4 +74,4 @@ classDiagram
     Atividade <-- Disciplina
     Aluno <-- Turma
     Disciplina <-- Aula
-
+```
