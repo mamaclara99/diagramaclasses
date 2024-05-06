@@ -5,6 +5,26 @@ classDiagram
         + abrirJanela(): void
         + fecharJanela(): void
     }
+ class JanelaAlunos {
+        + abrirJanela(): void
+        + fecharJanela(): void
+    }
+ class JanelaDiciplinas {
+        + abrirJanela(): void
+        + fecharJanela(): void
+    }
+ class JanelaTurmas {
+        + abrirJanela(): void
+        + fecharJanela(): void
+    }
+ class JanelaAulas {
+        + abrirJanela(): void
+        + fecharJanela(): void
+    }
+ class JanelaAtividades {
+        + abrirJanela(): void
+        + fecharJanela(): void
+    }
 
     class Administracao {
         + adicionarUsuario(): void
