@@ -56,6 +56,21 @@ classDiagram
         + visualizarInformacoes(): void
         + atualizarInformacoes(): void
     }
+      class Aula {
+        - tema: string
+        - data: int
+        - horaInicio: int
+        - horaFim: int
+        - sala: string
+        - professor: string
+        - alunosPresentes: list
+        - conteudoAbordado: string
+        + registrarPresenca : void
+        + atualizarConteudoAbordado : void
+        + alterarSala : void
+        + alterarProfessor : void
+        + cancelarAula(): void
+    }
 
     class Disciplina {
         - nome: string
@@ -89,6 +104,30 @@ classDiagram
         + criarRelatorio (): string
         + editarRelatorio (): string
     }
+   class ControleTurma{
+      +incluirTurma () : void
+      +alterarTurma () : void
+      +excluirTurma () : void
+      +visualizarTurma() : void
+   }
+   class ControleAula{
+      +incluirAula () : void
+      +alterarAula () : void
+      +excluirAula () : void
+      +visualizarAula() : void
+   }
+   class ControleAtividade{
+      +incluirAtividade() : void
+      +alterarAtividade () : void
+      +excluirAtividade () : void
+      +visualizarAtividade() : void
+   }
+   class ControleDisciplina{
+      +incluirDisciplina () : void
+      +alterarDisciplina () : void
+      +excluirDisciplina () : void
+      +visualizarDisciplina() : void
+   }
 
     JanelaInicial o-- Administracao
     JanelaAlunos o-- JanelaInicial
