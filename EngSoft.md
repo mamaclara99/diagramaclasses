@@ -1,27 +1,31 @@
 Vc colocou no começo:
 ```mermaid
 classDiagram
- class JanelaInicial {
+   class JanelaInicial {
         + abrirJanela(): void
         + fecharJanela(): void
     }
- class JanelaAlunos {
+   class JanelaAlunos {
         + abrirJanela(): void
         + fecharJanela(): void
     }
- class JanelaDisciplinas {
+   class JanelaDisciplinas {
         + abrirJanela(): void
         + fecharJanela(): void
     }
- class JanelaTurmas {
+   class JanelaTurmas {
         + abrirJanela(): void
         + fecharJanela(): void
     }
- class JanelaAulas {
+   class JanelaAulas {
         + abrirJanela(): void
         + fecharJanela(): void
     }
- class JanelaAtividades {
+   class JanelaAtividades {
+        + abrirJanela(): void
+        + fecharJanela(): void
+    }
+  class JanelaRelatorios {
         + abrirJanela(): void
         + fecharJanela(): void
     }
