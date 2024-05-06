@@ -9,7 +9,7 @@ classDiagram
         + abrirJanela(): void
         + fecharJanela(): void
     }
- class JanelaDiciplinas {
+ class JanelaDisciplinas {
         + abrirJanela(): void
         + fecharJanela(): void
     }
